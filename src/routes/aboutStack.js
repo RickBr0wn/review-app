@@ -18,7 +18,6 @@ export default createStackNavigator(
     defaultNavigationOptions: {
       headerStyle: {
         height: 50,
-        width: '100%',
       },
     },
   },
