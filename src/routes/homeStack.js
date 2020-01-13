@@ -4,12 +4,27 @@ import Home from '../screens/home'
 import ReviewDetails from '../screens/reviewDetails'
 
 export default createAppContainer(
-  createStackNavigator({
-    Home: {
-      screen: Home,
+  createStackNavigator(
+    {
+      Home: {
+        screen: Home,
+        navigationOptions: {
+          title: 'GameZone',
+        },
+      },
+      ReviewDetails: {
+        screen: ReviewDetails,
+        navigationOptions: {
+          title: 'Review Details',
+        },
+      },
     },
-    ReviewDetails: {
-      screen: ReviewDetails,
+    {
+      defaultNavigationOptions: {
+        headerStyle: {
+          //   backgroundColor: '#eee',
+        },
+      },
     },
-  }),
+  ),
 )
