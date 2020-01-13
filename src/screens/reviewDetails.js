@@ -22,6 +22,15 @@ const ReviewDetails = ({navigation}) => {
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  rating: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    paddingTop: 16,
+    marginTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: '#eee',
+  },
+})
 
 export default ReviewDetails
