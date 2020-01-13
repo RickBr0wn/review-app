@@ -1,28 +1,24 @@
 import React from 'react'
 import {createStackNavigator} from 'react-navigation-stack'
-import Home from '../screens/home'
-import ReviewDetails from '../screens/reviewDetails'
+import About from '../screens/about'
 import Header from '../shared/header'
 
 export default createStackNavigator(
   {
-    Home: {
-      screen: Home,
+    About: {
+      screen: About,
       navigationOptions: ({navigation}) => ({
-        headerTitle: () => <Header navigation={navigation} title="GameZone" />,
+        headerTitle: () => (
+          <Header navigation={navigation} title="About GameZone" />
+        ),
       }),
-    },
-    ReviewDetails: {
-      screen: ReviewDetails,
-      navigationOptions: {
-        title: 'Review Details',
-      },
     },
   },
   {
     defaultNavigationOptions: {
       headerStyle: {
         height: 50,
+        width: '100%',
       },
     },
   },
