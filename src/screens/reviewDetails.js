@@ -5,7 +5,10 @@ import {globalStyles as gs} from '../styles/global'
 const ReviewDetails = ({navigation}) => {
   return (
     <View style={gs.container}>
-      <Text>Review Details</Text>
+      <Text>{navigation.getParam('key')}</Text>
+      <Text>{navigation.getParam('title')}</Text>
+      <Text>{navigation.getParam('rating')}</Text>
+      <Text>{navigation.getParam('body')}</Text>
       <Button title="back to home screen" onPress={() => navigation.goBack()} />
     </View>
   )
